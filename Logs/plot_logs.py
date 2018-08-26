@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 plt.rcParams['figure.figsize'] = (12, 8)
 
-# Test set: Average loss: 0.0000, Accuracy: 9921/10000 (99%)
+
 # Load text files function
 def load_log(file):
     test_acc = []
@@ -21,10 +21,6 @@ def main():
     filename = '-m4.txt'
     shows = {}
     shows['test_acc_1'] = load_log(path + 'log1' + filename)
-    # shows['test_acc_2'] = load_log(path + 'log2' + filename)
-    # shows['test_acc_3'] = load_log(path + 'log3' + filename)
-    # shows['test_acc_4'] = load_log(path + 'log4' + filename)
-    # shows['test_acc_5'] = load_log(path + 'log5' + filename)
 
     for key in sorted(shows.keys()):
         if 'acc' in key:
