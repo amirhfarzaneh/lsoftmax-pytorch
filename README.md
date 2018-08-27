@@ -5,7 +5,7 @@
 
 this repository contains a new, clean and enhanced pytorch implementation of L-Softmax proposed in the following paper:
 
-**Large-Margin Softmax Loss for Con volutional Neural Networks** By Weiyang Liu, Yandong Wen, Zhiding Yu, Meng Yang [[pdf in arxiv](https://arxiv.org/pdf/1612.02295.pdf)] [[original CAFFE code by authors](https://github.com/wy1iu/LargeMargin_Softmax_Loss)]
+**Large-Margin Softmax Loss for Convolutional Neural Networks** By Weiyang Liu, Yandong Wen, Zhiding Yu, Meng Yang [[pdf in arxiv](https://arxiv.org/pdf/1612.02295.pdf)] [[original CAFFE code by authors](https://github.com/wy1iu/LargeMargin_Softmax_Loss)]
 
 L-Softmax proposes a modified softmax classification method to increase the inter-class separability and intra-class compactness.
 
@@ -26,6 +26,7 @@ this re-implementation is based on the earlier pytorch implementation [here](htt
 This code has been tested in Ubuntu 18.04 LTS using PyCharm IDE and a NVIDIA 1080Ti GPU. Here is a list of libraries and their corresponding versions:
 
 ```
+python = 3.6
 pytorch = 0.4.1
 torchvision = 0.2.1
 matplotlib = 2.2.2

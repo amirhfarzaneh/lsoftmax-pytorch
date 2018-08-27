@@ -88,7 +88,7 @@ def main():
     parser.add_argument('--margin', type=int, default=4, metavar='M',
                         help='the margin for the l-softmax formula (m=1, 2, 3, 4)')
     parser.add_argument('--batch-size', type=int, default=256, metavar='N',
-                        help='input batch size for training (default: 64)')
+                        help='input batch size for training (default: 256)')
     parser.add_argument('--test-batch-size', type=int, default=1000, metavar='N',
                         help='input batch size for testing (default: 1000)')
     parser.add_argument('--epochs', type=int, default=100, metavar='N',
@@ -96,7 +96,7 @@ def main():
     parser.add_argument('--lr', type=float, default=0.1, metavar='LR',
                         help='initial learning rate (default: 0.1)')
     parser.add_argument('--momentum', type=float, default=0.9, metavar='M',
-                        help='SGD momentum (default: 0.5)')
+                        help='SGD momentum (default: 0.9)')
     parser.add_argument('--weight-decay', type=float, default=5e-4, metavar='W',
                         help='SGD weight decay (default: 0.0005)')
     parser.add_argument('--no-cuda', action='store_true', default=False,
@@ -106,7 +106,7 @@ def main():
     parser.add_argument('--log-interval', type=int, default=10, metavar='N',
                         help='how many batches to wait before logging training status')
     parser.add_argument('--vis', default=False, metavar='V',
-                        help='enables visualizing 2d features (default: True).')
+                        help='enables visualizing 2d features (default: False).')
     args = parser.parse_args()
     print(args)
     use_cuda = not args.no_cuda and torch.cuda.is_available()
